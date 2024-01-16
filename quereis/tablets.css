@@ -1,0 +1,68 @@
+@media (min-width: 576px) and (max-width: 768px) {
+    html {
+      font-size: 54%;
+    }
+   
+    .logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+    .fa-bars{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    z-index: 5;
+    display: block;
+   }
+   .fa-xmark{
+     position: absolute;
+    top: 4rem;
+    right: 4rem;
+    z-index: 5;
+    display: none;
+  }
+  .btn-nav{
+    display: block;
+  }
+  /* .phone-nav{
+    display: block;
+  } */
+    .nav-container{
+      width: 100%;
+    }
+   .nav-bar{
+    display: block;
+   }
+   
+  .main-nav-list{
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+     background-image: linear-gradient(
+      to right,
+      rgba(46, 234, 242, 1),
+      rgba(46, 100, 242, 1.1)
+    );
+    z-index: 2;
+  display: none;
+  
+  }
+  .main-nav-list.show-menu {
+    display: flex;
+  }
+  .main-nav-link{
+    color: #fff;
+    display: inline-block;
+    text-transform:uppercase;
+    font-size:1.5rem;
+    font-weight: 600;
+      padding: 1rem;
+  
+  }
+    }
