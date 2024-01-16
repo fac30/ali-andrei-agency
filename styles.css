@@ -64,6 +64,8 @@ table {
 	--clr-headings: #505050;
 	--clr-toggle: #e9c46a;
 	--ff-handwriting: Kalam, Courier, monospace;
+	--clr-logo-fill: #52b0d0;
+	--clr-logo-stroke: rgb(96, 72, 102);
 }
 
 html[data-theme='dark'] {
@@ -73,6 +75,8 @@ html[data-theme='dark'] {
 	--clr-text: #efefef;
 	--clr-headings: #efefef;
 	--clr-toggle: #345b6f;
+	--clr-logo-fill: #70c4e0;
+	--clr-logo-stroke: rgb(208, 196, 196);
 }
 
 /* =========================================NAVIGATION======================================================= */
@@ -84,10 +88,9 @@ html[data-theme='dark'] {
   }
   .header {
 	  height: 100vh;
-	  background-color: green;
   }
   .logo {
-	width: 5rem;
+	width: 10rem;
 	height: 5rem;
   }
   .nav-bar{
@@ -228,6 +231,20 @@ main {
 	transition: inset-inline-start 0.4s ease-in-out; /* left */
 }
 
+/* ----- SVGs ----- */
+.cls-1{
+	fill: var(--clr-logo-fill);
+}
+
+.cls-2,.cls-3{
+	fill:none;stroke:var(--clr-logo-stroke);stroke-miterlimit:10;
+}
+.cls-2{
+	stroke-width:4.2px;
+}
+.cls-3{
+	stroke-width:8px;
+}
 /* ----- TOGGLE BUTTON | ACCESSIBILITY ----- */
 
 .no-js .theme-switch {
