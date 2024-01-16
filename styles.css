@@ -79,6 +79,14 @@ html[data-theme='dark'] {
 	--clr-logo-stroke: rgb(208, 196, 196);
 }
 
+/* =========================================PRIMITIVE CLASSES================================================ */
+
+.center {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
 /* =========================================NAVIGATION======================================================= */
 
 .container {
@@ -86,9 +94,7 @@ html[data-theme='dark'] {
 	width: 90%;
 	margin: 0 auto;
   }
-  .header {
-	  height: 100vh;
-  }
+
   .logo {
 	width: 10rem;
 	height: 5rem;
@@ -147,6 +153,12 @@ p {
 	font-weight: 300;
   }
 
+.p--first {
+	margin-bottom: 5rem;
+	max-width: 40rem;
+	margin-left: 10rem;
+}
+
 h1, h2, h3, h4 {
 	color: var(--clr-headings);
 	line-height: 1;
@@ -154,12 +166,15 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: clamp(3rem, 1.5rem + 10vw, 7rem);
 	font-weight: 700;
-	margin-top: 12rem;
+	margin-top: 7rem;
+	
 }
 h2 {
 	font-family: Satoshi, Arial, Helvetica, sans-serif;
-	font-size: clamp(1rem, 1rem + 10vw, 5rem);
+	font-size: clamp(1rem, 1rem + 10vw, 2rem);
 	font-weight: 700;
+	margin-top: 10rem;
+	align-items: flex-end;
 }
 
 ::selection {
@@ -180,6 +195,13 @@ a:hover {
 	border-bottom: 5px solid #D81E5B;
 }
 /*=========================================LAYOUT==========================================================*/
+
+.first-wrapper {
+	display: flex;
+	gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 .scroll-tracker {
 	position: absolute;
