@@ -56,7 +56,7 @@ table {
    src: url("fonts/Pencerio-Hairline.otf");
 }
 
-:root {
+html[data-theme='dark'] {
 	--clr-background: #efefef;
 	--clr-background-accent:#81C14B;
 	--clr-background-deco: #2A4494;
@@ -64,15 +64,49 @@ table {
 	--clr-headings: #505050;
 	--clr-toggle: #e9c46a;
 	--ff-handwriting: Kalam, Courier, monospace;
+	--clr-logo-fill: #52b0d0;
+	--clr-logo-stroke: rgb(96, 72, 102);
 }
 
-html[data-theme='dark'] {
-	--clr-background: #333333;
+:root {
+	--clr-background: #303041;
 	--clr-background-accent:#05F140;
 	--clr-background-deco: #D81E5B;
 	--clr-text: #efefef;
 	--clr-headings: #efefef;
 	--clr-toggle: #345b6f;
+	--clr-logo-fill: #70c4e0;
+	--clr-logo-stroke: rgb(208, 196, 196);
+}
+
+/* =========================================PRIMITIVE CLASSES================================================ */
+
+.center {
+	max-width: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+.icon {
+		width: 10rem;
+		height: 5rem;
+	}
+
+.grid-3 {
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 1fr;
+}
+
+.box {
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+  }
+
+.box > * {
+	padding: 1rem;
 }
 
 /* =========================================NAVIGATION======================================================= */
@@ -82,14 +116,8 @@ html[data-theme='dark'] {
 	width: 90%;
 	margin: 0 auto;
   }
-  .header {
-	  height: 100vh;
-	  background-color: green;
-  }
-  .logo {
-	width: 5rem;
-	height: 5rem;
-  }
+
+
   .nav-bar{
 	width: 100%;
 	/* position: relative; */
@@ -144,6 +172,12 @@ p {
 	font-weight: 300;
   }
 
+.p--first {
+	margin-bottom: 5rem;
+	max-width: 40rem;
+	margin-top: 1.5rem;
+}
+
 h1, h2, h3, h4 {
 	color: var(--clr-headings);
 	line-height: 1;
@@ -151,11 +185,19 @@ h1, h2, h3, h4 {
 h1 {
 	font-size: clamp(3rem, 1.5rem + 10vw, 7rem);
 	font-weight: 700;
-	margin-top: 12rem;
+	margin-top: 7rem;
+	
 }
 h2 {
 	font-family: Satoshi, Arial, Helvetica, sans-serif;
-	font-size: clamp(1rem, 1rem + 10vw, 5rem);
+	font-size: clamp(1rem, 1rem + 10vw, 3.5rem);
+	font-weight: 700;
+	margin-top: 1.5rem;
+	align-items: flex-end;
+}
+h3 {
+	font-family: Satoshi, Arial, Helvetica, sans-serif;
+	font-size: clamp(1rem, 1rem + 10vw, 2.5rem);
 	font-weight: 700;
 }
 
@@ -164,6 +206,10 @@ h2 {
 	color: white;
 }
 
+#how-it-works > div > p { 
+    font-size: 1rem;
+	font-weight: 500;
+}
 /* ========================================LINKS STYLING===================================================*/
 a {
 	color: inherit;
@@ -176,6 +222,9 @@ a:hover {
 	color:var(--clr-links) ;
 	border-bottom: 5px solid #D81E5B;
 }
+a > img {
+
+}
 /*=========================================LAYOUT==========================================================*/
 
 .scroll-tracker {
@@ -184,6 +233,11 @@ a:hover {
 	height: 0.5rem;
 	background-color: var(--clr-background-deco);
 	transform-origin: left;
+}
+
+#how-it-works {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
 }
 /* ----- TOGGLE BUTTON | LAYOUT ----- */
 
@@ -228,6 +282,20 @@ main {
 	transition: inset-inline-start 0.4s ease-in-out; /* left */
 }
 
+/* ----- SVGs ----- */
+.cls-1{
+	fill: var(--clr-logo-fill);
+}
+
+.cls-2,.cls-3{
+	fill:none;stroke:var(--clr-logo-stroke);stroke-miterlimit:10;
+}
+.cls-2{
+	stroke-width:4.2px;
+}
+.cls-3{
+	stroke-width:8px;
+}
 /* ----- TOGGLE BUTTON | ACCESSIBILITY ----- */
 
 .no-js .theme-switch {
