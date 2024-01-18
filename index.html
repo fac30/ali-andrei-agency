@@ -1,90 +1,269 @@
 <!DOCTYPE html>
-<html
-lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The website of the [Waypoint] Teleportation Agency">
-  <meta name="keywords" content="web design, teleportation, minimalist, agency">
-  <title>[Waypoint] Teleportation Agency</title>
-  <link
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The website of the [Waypoint] Teleportation Agency"
+    />
+    <meta
+      name="keywords"
+      content="web design, teleportation, minimalist, agency"
+    />
+    <title>[Waypoint] Teleportation Agency</title>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" href="../quereis/phones.css" />
     <link rel="stylesheet" href="../quereis/tablets.css" />
-	<script defer src="app.js"></script>
-</head>
-<body>
-  <header class="header">
-    <div class="container nav-container">
-      <div class="nav-bar">
-      <div class="logo-box">
-        <img src="" class="logo" alt="logo-image" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <div class="nav-bar">
+          <div class="logo-box">
+            <img src="" class="logo" alt="logo-image" />
+          </div>
+          <nav class="main-nav phone-nav">
+            <ul class="main-nav-list">
+              <li><a href="#" class="main-nav-link active-link">A</a></li>
+              <li><a href="#" class="main-nav-link">B</a></li>
+              <li><a href="#" class="main-nav-link">C</a></li>
+              <li><a href="#" class="main-nav-link">D</a></li>
+              <li><a href="#" class="main-nav-link">E</a></li>
+            </ul>
+          </nav>
+          <div class="btn-nav">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <button
+            class="desktop-button-theme theme-switch"
+            type="button"
+            aria-pressed="false"
+            aria-label="Use Dark Mode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z" />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <circle cx="12" cy="12" r="5" />
+              <path
+                d="M12 1v2m0 18v2M4 4l2 2m12 12 2 2M1 12h2m18 0h2M4 20l2-2M18 6l2-2"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-      <nav class="main-nav phone-nav">
-        <ul class="main-nav-list">       
-          <li><a href="#" class="main-nav-link active-link">A</a></li>
-          <li><a href="#" class="main-nav-link">B</a></li>
-          <li><a href="#" class="main-nav-link">C</a></li>
-          <li><a href="#" class="main-nav-link">D</a></li>
-          <li><a href="#" class="main-nav-link">E</a></li>
-        </ul>
-      </nav>
-      <div class="btn-nav">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-xmark"></i>
-      </div>
-      <button
-      class="desktop-button-theme theme-switch"
-      type="button"
-      aria-pressed="false"
-      aria-label="Use Dark Mode"
-      >
-<svg 
-     xmlns="http://www.w3.org/2000/svg"
-     width="24"
-     height="24"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="currentColor"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     aria-hidden="true"
-     focusable="false"
-     >
-  <path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z" />
-</svg>
-<svg
-     xmlns="http://www.w3.org/2000/svg"
-     width="24"
-     height="24"
-     viewBox="0 0 24 24"
-     fill="none"
-     stroke="currentColor"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
-     aria-hidden="true"
-     focusable="false"
-     >
-  <circle cx="12" cy="12" r="5" />
-  <path
-        d="M12 1v2m0 18v2M4 4l2 2m12 12 2 2M1 12h2m18 0h2M4 20l2-2M18 6l2-2"
-        />
-</svg>
-</button>
-      </div>
-      </div>
-   </header> 
+    </header>
+
+    <main>
+      <section id="gallery">
+        <div class="container">
+          <div class="gallery-container">
+            <a href="#" class="gallery-link"
+              ><img
+                class="gallery-image"
+                src="./img/italy.jpeg"
+                alt="italy"
+              /><span class="gallery-title">italy</span></a
+            >
+            <a href="#" class="gallery-link"
+              ><img
+                class="gallery-image"
+                src="./img/egypt.jpeg"
+                alt="egypt"
+              /><span class="gallery-title">egypt</span></a
+            >
+            <a href="#" class="gallery-link"
+              ><img
+                class="gallery-image"
+                src="./img/turkey.jpeg"
+                alt="turkey"
+              /><span class="gallery-title">turkey</span></a
+            >
+            <a href="#" class="gallery-link"
+              ><img
+                class="gallery-image"
+                src="./img/greece.jpeg"
+                alt="greece"
+              /><span class="gallery-title">greece</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="holiday-offers">
+        <div class="container">
+          <h2 class="holiday-offers-title">Holiday Offers</h2>
+          <div class="cards-container">
+            <div class="card">
+              <img src="./img/greece.jpeg" class="card-image"alt="greece-image">
+              <div class="card-content">
+              <span class="card-location">Athens</span>
+              <h3 class="card-name">greece</h3>
+              <span class="card-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p class="card-description">Relaxation, family fun, great food, and year-round sunshine; what's not to like about the GF Fanabe on Tenerife's Costa Adeje?</p>
+              <div class="card-bottom">
+                <div class="price-details"><span class="from">from</span><span class="price">£689</span><span class="per-person">pp</span></div>
+                <button class="btn-details">details</button>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/turkey.jpeg" class="card-image"alt="turkey-img">
+              <div class="card-content">
+              <span class="card-location">Athens</span>
+              <h3 class="card-name">greece</h3>
+              <span class="card-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p class="card-description">Relaxation, family fun, great food, and year-round sunshine; what's not to like about the GF Fanabe on Tenerife's Costa Adeje?</p>
+              <div class="card-bottom">
+                <div class="price-details"><span class="from">from</span><span class="price">£689</span><span class="per-person">pp</span></div>
+                <button class="btn-details">details</button>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/italy.jpeg" class="card-image"alt="italy-image">
+              <div class="card-content">
+              <span class="card-location">Athens</span>
+              <h3 class="card-name">greece</h3>
+              <span class="card-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p class="card-description">Relaxation, family fun, great food, and year-round sunshine; what's not to like about the GF Fanabe on Tenerife's Costa Adeje?</p>
+              <div class="card-bottom">
+                <div class="price-details"><span class="from">from</span><span class="price">£689</span><span class="per-person">pp</span></div>
+                <button class="btn-details">details</button>
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/egypt.jpeg" class="card-image"alt="egypt-image">
+              <div class="card-content">
+              <span class="card-location">Athens</span>
+              <h3 class="card-name">greece</h3>
+              <span class="card-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+              <p class="card-description">Relaxation, family fun, great food, and year-round sunshine; what's not to like about the GF Fanabe on Tenerife's Costa Adeje?</p>
+              <div class="card-bottom">
+                <div class="price-details"><span class="from">from</span><span class="price">£689</span><span class="per-person">pp</span></div>
+                <button class="btn-details">details</button>
+              </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+      <section id ='contact-us'>
+        <div class="container">
+          <!-- <div class="overlay"></div> -->
+          <div id="formContainer">
+          <h2 class="contact-us-title">Contact Us!</h2>
+          <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+<fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <label>
+          <input type="radio" name="contact" value="email"  />
+          Email
+        </label>
+        <label>
+          <input type="radio" name="contact" value="phone" />
+          Phone
+        </label>
+        
+      </fieldset>
+      <label for="consent_checkbox">
+        <input type="checkbox" id="consent_checkbox" name="marketingConsent" />
+        I agree to receive marketing emails.
+      </label>
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="message"><p class="welcome-message">Welcome, " + name + "! Your form has been submitted.</p></div>
+  </div>
+  </section>
+  <section id="reviews">
+  <div class="container">
+    <div class="review-content">
+    <div class="card-review">
+      <span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span>
+      <h3 class="reviewer-name">Joe</h3>
+      <h4 class="review-title">We weren't rushed into making</h4>
+      <p class="review-message">I was pleased that the flight was available. We were hoping for a self catering apartment but ended up deciding...</p>
+    </div>
+    <div class="card-review">
+      <span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span>
+      <h3 class="reviewer-name">Mike</h3>
+      <h4 class="review-title">Very helpful</h4>
+      <p class="review-message">Very helpful, booking our holiday, only thing couldn't sort was booking our dining with our daughter</p>
+    </div>
+    <div class="card-review">
+      <span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star last"></i></span>
+      <h3 class="reviewer-name">Sam</h3>
+      <h4 class="review-title">Excellent Sue!</h4>
+      <p class="review-message">Helpful and friendly, with good knowledge and advice.</p>
+    </div>
+    <div class="card-review">
+      <span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span>
+      <h3 class="reviewer-name">George</h3>
+      <h4 class="review-title">Professional service at its very best
+</h4>
+      <p class="review-message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam saepe ad beatae neque ...</p>
+    </div>
+    </div>
+  </div>
+
+
+
+   
+  </section>
   
 
-  <footer class="bg-lighter">
-    <a class="backtop" href="#top"> </a>			
-   <p>©Ali Quassab, Andrei Dutulescu 2023</p>
-   <a href="https://www.foundersandcoders.com/">Founders and Coders</a>
-  </footer>
-</body>
+    </main>
+    <footer class="bg-lighter">
+      <a class="backtop" href="#top"> </a>
+      <p>©Ali Qassab, Andrei Dutulescu 2024</p>
+      <a href="https://www.foundersandcoders.com/">Founders and Coders</a>
+    </footer>
+  </body>
 </html>

@@ -72,4 +72,23 @@
   .theme-switch {
     display: none;
   }
+  .cards-container,
+  .gallery-container,
+  .review-content {
+    grid-template-columns: 1fr;
+  }
+
+  .holiday-offers .gallery {
+    padding: 0.5rem 0;
+  }
+.btn-details {
+  /* padding: .5rem ; */
+  font-size: 1.5rem;
+}
+  .gallery-link:nth-child(1),
+  .gallery-link:nth-child(2),
+  .gallery-link:nth-child(3),
+  .gallery-link:nth-child(4) {
+    grid-column: auto;
+  }
     }

@@ -1,32 +1,33 @@
 // DARK MODE JS
 
-( () => {
-	let theme = 'light';
+(() => {
+  let theme = "light";
 
-	/**
-	 * Function to toggle between themes
-	 *
-	 * @param {MouseEvent} event
-	 */
-	const onToggleTheme = ( { currentTarget } ) => {
-		const newTheme = theme === 'light' ? 'dark' : 'light';
-		theme = newTheme;
+  /**
+   * Function to toggle between themes
+   *
+   * @param {MouseEvent} event
+   */
+  const onToggleTheme = ({ currentTarget }) => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    theme = newTheme;
 
-		document.documentElement.setAttribute( 'data-theme', newTheme );
-		currentTarget.setAttribute( 'aria-pressed', newTheme === 'dark' );
-	}; 
+    document.documentElement.setAttribute("data-theme", newTheme);
+    currentTarget.setAttribute("aria-pressed", newTheme === "dark");
+  };
 
-	// Get switch button and add click event
-	const btn = document.querySelector( `.theme-switch` );
-	if ( ! btn ) return;
-	btn.addEventListener( 'click', onToggleTheme, false );
-  
-  
+  // Get switch button and add click event
+  const btn = document.querySelector(`.theme-switch`);
+  if (!btn) return;
+  btn.addEventListener("click", onToggleTheme, false);
+
   // DEMO
-	const toggle = document.querySelector( `.writing-toggle` );
-  if ( ! toggle ) return;
-  toggle.addEventListener('click', () => document.body.classList.toggle('vertical'));
-} )();
+  const toggle = document.querySelector(`.writing-toggle`);
+  if (!toggle) return;
+  toggle.addEventListener("click", () =>
+    document.body.classList.toggle("vertical")
+  );
+})();
 
 //   NAVBAR JS
 
@@ -57,4 +58,19 @@ function handleLinkClick(e) {
 links.forEach((link) => {
   link.addEventListener("click", handleLinkClick);
 });
+// Form Handler
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+
+    const messageDiv = document.querySelector(".welcome-message");
+    messageDiv.innerHTML = `💥 Welcome, ${name}! Thank you for submitting. We will contact you soon! 💥`;
+    messageDiv.style.display = "block";
+    document.querySelector(".message").style.display = "block";
+    // Hide the form
+    document.getElementById("formContainer").style.display = "none";
+  });
 
