@@ -1,7 +1,7 @@
 // DARK MODE JS
 
 ( () => {
-	let theme = 'dark';
+	let theme = 'light';
 
 	/**
 	 * Function to toggle between themes
@@ -58,71 +58,3 @@ links.forEach((link) => {
   link.addEventListener("click", handleLinkClick);
 });
 
-// ===================================================================CONTENT RANDOMIZERS=========================================================
-  // =================================================================CHANGING H1s==============================================================
-
-// Object containing catchphrases 
-const catchphrases = {
-    1: 'Train strike?',
-    2: 'Stuck in traffic?',
-    3: 'Plane delayed?',
-    4: 'Long bus journeys?',
-    5: 'Not a huge walker?',
-    6: 'Flat tire?',
-    // Add more catchphrases as needed
-  };
-
-  // Function to inject a random catchphrase into an element with the specified class
-  function injectRandomCatchphrase() {
-    // Get the element with the class "h1--changing"
-    const h1Element = document.querySelector('.h1--changing');
-
-    // Get an array of all catchphrase keys
-    const catchphraseKeys = Object.keys(catchphrases);
-
-    // Choose a random catchphrase key
-    const randomKey = catchphraseKeys[Math.floor(Math.random() * catchphraseKeys.length)];
-
-    // Get the catchphrase message based on the random key
-    const randomCatchphrase = catchphrases[randomKey];
-
-    // Set the text content of the element to the random catchphrase
-    h1Element.textContent = randomCatchphrase;
-  }
-
-  // Call the function to inject a random catchphrase when the page loads
-  window.addEventListener('load', injectRandomCatchphrase);
-
-  // =================================================================CHANGING H2s==============================================================
-
-// Object containing catchphrases 
-const catchphrases2 = {
-    1: 'We know..',
-    2: 'Us too..',
-    3: 'We get you!',
-    4: 'Not today!',
-    5: 'No worries!',
-    6: 'We have the solution',
-    // Add more catchphrases as needed
-  };
-
-  // Function to inject a random catchphrase into an element with the specified class
-  function injectRandomCatchphrase2() {
-    // Get the element with the class "h2--changing"
-    const h2Element = document.querySelector('.h2--changing');
-
-    // Get an array of all catchphrase keys
-    const catchphraseKeys = Object.keys(catchphrases2);
-
-    // Choose a random catchphrase key
-    const randomKey = catchphraseKeys[Math.floor(Math.random() * catchphraseKeys.length)];
-
-    // Get the catchphrase message based on the random key
-    const randomCatchphrase = catchphrases2[randomKey];
-
-    // Set the text content of the element to the random catchphrase
-    h2Element.textContent = randomCatchphrase;
-  }
-
-  // Call the function to inject a random catchphrase when the page loads
-  window.addEventListener('load', injectRandomCatchphrase2);
