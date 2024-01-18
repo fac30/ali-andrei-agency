@@ -25,9 +25,7 @@
   .btn-nav{
     display: block;
   }
-  /* .phone-nav{
-    display: block;
-  } */
+ 
     .nav-container{
       width: 100%;
     }
@@ -64,5 +62,15 @@
     font-weight: 600;
       padding: 1rem;
   
+  }
+  .cards-container,
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  #contact-us {
+    height: auto;
+  }
+  .review-content {
+    grid-template-columns: 1fr 1fr;
   }
     }

@@ -28,6 +28,7 @@
   toggle.addEventListener('click', () => document.body.classList.toggle('vertical'));
 } )();
 
+
 //   NAVBAR JS
 
 const openMenu = document.querySelector(".fa-bars");
@@ -57,6 +58,21 @@ function handleLinkClick(e) {
 links.forEach((link) => {
   link.addEventListener("click", handleLinkClick);
 });
+// Form Handler
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+
+    const messageDiv = document.querySelector(".welcome-message");
+    messageDiv.innerHTML = `💥 Welcome, ${name}! Thank you for submitting. We will contact you soon! 💥`;
+    messageDiv.style.display = "block";
+    document.querySelector(".message").style.display = "block";
+    // Hide the form
+    document.getElementById("formContainer").style.display = "none";
+  });
 
 // ===================================================================CONTENT RANDOMIZERS=========================================================
   // =================================================================CHANGING H1s==============================================================
