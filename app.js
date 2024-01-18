@@ -1,7 +1,7 @@
 // DARK MODE JS
 
 ( () => {
-	let theme = 'light';
+	let theme = 'dark';
 
 	/**
 	 * Function to toggle between themes
@@ -64,10 +64,10 @@ links.forEach((link) => {
 // Object containing catchphrases 
 const catchphrases = {
     1: 'Train strike?',
-    2: 'Tired of being stuck in traffic?',
+    2: 'Stuck in traffic?',
     3: 'Plane delayed?',
-    4: 'Endless bus journeys?',
-    5: 'Not much of a walker?',
+    4: 'Long bus journeys?',
+    5: 'Not a huge walker?',
     6: 'Flat tire?',
     // Add more catchphrases as needed
   };
@@ -99,7 +99,7 @@ const catchphrases = {
 const catchphrases2 = {
     1: 'We know..',
     2: 'Us too..',
-    3: 'We got you!',
+    3: 'We get you!',
     4: 'Not today!',
     5: 'No worries!',
     6: 'We have the solution',

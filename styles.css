@@ -56,7 +56,7 @@ table {
    src: url("fonts/Pencerio-Hairline.otf");
 }
 
-:root {
+html[data-theme='dark'] {
 	--clr-background: #efefef;
 	--clr-background-accent:#81C14B;
 	--clr-background-deco: #2A4494;
@@ -68,8 +68,8 @@ table {
 	--clr-logo-stroke: rgb(96, 72, 102);
 }
 
-html[data-theme='dark'] {
-	--clr-background: #333333;
+:root {
+	--clr-background: #303041;
 	--clr-background-accent:#05F140;
 	--clr-background-deco: #D81E5B;
 	--clr-text: #efefef;
@@ -87,6 +87,28 @@ html[data-theme='dark'] {
 	margin-right: auto;
 	}
 
+.icon {
+		width: 10rem;
+		height: 5rem;
+	}
+
+.grid-3 {
+	display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr 1fr;
+}
+
+.box {
+	text-align: center;
+	padding: 10px;
+	border-radius: 3px;
+  }
+
+.box > * {
+	padding: 1rem;
+}
+
 /* =========================================NAVIGATION======================================================= */
 
 .container {
@@ -95,10 +117,7 @@ html[data-theme='dark'] {
 	margin: 0 auto;
   }
 
-  .logo {
-	width: 10rem;
-	height: 5rem;
-  }
+
   .nav-bar{
 	width: 100%;
 	/* position: relative; */
@@ -156,7 +175,7 @@ p {
 .p--first {
 	margin-bottom: 5rem;
 	max-width: 40rem;
-	margin-left: 10rem;
+	margin-top: 1.5rem;
 }
 
 h1, h2, h3, h4 {
@@ -171,10 +190,15 @@ h1 {
 }
 h2 {
 	font-family: Satoshi, Arial, Helvetica, sans-serif;
-	font-size: clamp(1rem, 1rem + 10vw, 2rem);
+	font-size: clamp(1rem, 1rem + 10vw, 3.5rem);
 	font-weight: 700;
-	margin-top: 10rem;
+	margin-top: 1.5rem;
 	align-items: flex-end;
+}
+h3 {
+	font-family: Satoshi, Arial, Helvetica, sans-serif;
+	font-size: clamp(1rem, 1rem + 10vw, 2.5rem);
+	font-weight: 700;
 }
 
 ::selection {
@@ -182,6 +206,10 @@ h2 {
 	color: white;
 }
 
+#how-it-works > div > p { 
+    font-size: 1rem;
+	font-weight: 500;
+}
 /* ========================================LINKS STYLING===================================================*/
 a {
 	color: inherit;
@@ -194,14 +222,10 @@ a:hover {
 	color:var(--clr-links) ;
 	border-bottom: 5px solid #D81E5B;
 }
-/*=========================================LAYOUT==========================================================*/
+a > img {
 
-.first-wrapper {
-	display: flex;
-	gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
 }
+/*=========================================LAYOUT==========================================================*/
 
 .scroll-tracker {
 	position: absolute;
@@ -209,6 +233,11 @@ a:hover {
 	height: 0.5rem;
 	background-color: var(--clr-background-deco);
 	transform-origin: left;
+}
+
+#how-it-works {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
 }
 /* ----- TOGGLE BUTTON | LAYOUT ----- */
 
