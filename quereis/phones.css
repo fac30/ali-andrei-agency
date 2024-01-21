@@ -10,7 +10,13 @@
     top: 4rem;
     left: 4rem;
   }
+  #how-it-works > .icon {
+    width: 25rem;
+  }
   
+  div.box:nth-child(3) {
+    display: none;
+  }
   .fa-bars{
     position: absolute;
     top: 4rem;
@@ -93,9 +99,41 @@
     grid-column: auto;
   }
 
-.grid-3 {
-  grid-template-columns: 1fr;
-}
+  .grid-3 {
+  grid-auto-rows: 100px; 
+  grid-template-columns: 1fr; 
+  grid-gap: 2em;
+  }
+  
+  #empty-1 {
+    grid-area: 8;
+    display: none;
+  }
+  
+  #how-it-works-heading {
+    grid-area: 1;
+  }
+  
+  #empty-2 {
+    grid-area: 9;
+  }
+  
+  #icon-portal {
+    grid-area: 2;
+    margin-top: -6em;
+  }
+  
+  #text-1 {
+    grid-area: 3;
+  }
+  
+  #icon-reactor {
+    grid-area: 4;
+  }
+  
+  #text-2 {
+    grid-area: 5
+  }
   
   
     }

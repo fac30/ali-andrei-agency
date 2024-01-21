@@ -2,7 +2,9 @@
     html {
       font-size: 54%;
     }
-   
+   .theme-switch {
+    display: none;
+   }
     .logo-box {
     position: absolute;
     top: 4rem;

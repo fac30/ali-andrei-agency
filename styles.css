@@ -1,7 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+
+/* ----- GENERAL STYLING ----- */
 
 * {
 	margin: 0;
@@ -9,39 +7,6 @@
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: "";
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 /* ----- VARIABLES ----- */
@@ -82,6 +47,7 @@ html[data-theme='dark'] {
 	--ff-handwriting: Kalam, Courier, monospace;
 	--clr-logo-fill: #52b0d0;
 	--clr-logo-stroke: rgb(96, 72, 102);
+	--clr-active: #196c92;
 }
 
 :root {
@@ -93,6 +59,7 @@ html[data-theme='dark'] {
 	--clr-toggle: #345b6f;
 	--clr-logo-fill: #70c4e0;
 	--clr-logo-stroke: rgb(208, 196, 196);
+	--clr-active: #52b0d0;
 }
 
 /* =========================================PRIMITIVE CLASSES================================================ */
@@ -152,14 +119,14 @@ html[data-theme='dark'] {
 }
 
 .main-nav-link {
-	color: #fff;
+	color: var(--clr-links);
 	text-transform: uppercase;
 	font-size: 1.5rem;
 	font-weight: 600;
 }
 
 .active-link {
-	color: #355fdb;
+	color: var(--clr-active);
 }
 
 .fa-solid {
@@ -205,11 +172,11 @@ h3,
 h4 {
 	color: var(--clr-headings);
 	line-height: 1;
+	font-weight: 700;
 }
 
 h1 {
 	font-size: clamp(3rem, 1.5rem + 10vw, 7rem);
-	font-weight: 700;
 	margin-top: 7rem;
 
 }
@@ -217,7 +184,6 @@ h1 {
 h2 {
 	font-family: Satoshi, Arial, Helvetica, sans-serif;
 	font-size: clamp(1rem, 1rem + 10vw, 3.5rem);
-	font-weight: 700;
 	margin-top: 1.5rem;
 	align-items: flex-end;
 }
@@ -225,7 +191,6 @@ h2 {
 h3 {
 	font-family: Satoshi, Arial, Helvetica, sans-serif;
 	font-size: clamp(1rem, 1rem + 10vw, 2.5rem);
-	font-weight: 700;
 }
 
 ::selection {
@@ -237,6 +202,12 @@ h3 {
 	font-size: 1rem;
 	font-weight: 500;
 }
+
+#how-it-works-heading > h2 {
+	font-size: 4rem;
+}
+
+
 
 /* ========================================LINKS STYLING===================================================*/
 a {
@@ -271,10 +242,12 @@ a:hover {
 #first-wrapper {
   max-width: 60rem;
 }
+
+
 /* ----- TOGGLE BUTTON | LAYOUT ----- */
 
 .theme-switch {
-	--diameter: 2.5rem;
+	--diameter: 2rem;
 	--spacing: 0.3rem;
 	inline-size: calc(var(--diameter) * 2 + var(--spacing) * 2);
 	block-size: calc(var(--diameter) + var(--spacing) * 2);
@@ -289,6 +262,8 @@ a:hover {
 	align-items: center;
 	justify-content: space-around;
 	transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+	margin-top: -8.5em;
+	margin-right: -1.5em;
 }
 
 main {
@@ -332,6 +307,15 @@ main {
 	stroke-width: 8px;
 }
 
+.courier > * > * {
+	fill: none;
+	stroke: white;
+	stroke-miterlimit: 10;
+}
+
+.b56a02e7-a09d-46a2-990c-258828395189 {
+	stroke: var(--clr-logo-stroke);
+}
 /* ----- TOGGLE BUTTON | ACCESSIBILITY ----- */
 
 .no-js .theme-switch {
@@ -355,14 +339,6 @@ main {
 		transition-duration: 0.01s;
 	}
 }
-
-/* ----- DEMO ----- */
-
-/* body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--clr-text);
-  background: var(--clr-background);
-} */
 
 /* -----FOOTER----- */
 
@@ -393,7 +369,7 @@ footer {
 }
 
 
-/* gallery */
+/* -----GALLERY----- */
 
 #gallery {
 	padding: 6rem 0;
@@ -444,7 +420,7 @@ footer {
 	text-transform: uppercase;
 	font-size: 5rem;
 	font-weight: 700;
-	color: var(--clr-text);
+	color: white;
 	top: 1rem;
 	left: 1rem;
 }
@@ -542,7 +518,9 @@ textarea:focus {
 	color: var(--clr-text);
 }
 
-/* reviews */
+/* -----REVIEWS----- */
+
+
 #reviews {
 	padding: 10rem 0;
 	background-color: var(--clr-text);
@@ -586,7 +564,8 @@ textarea:focus {
 	text-align: left;
 }
 
-/* Offers */
+/* -----OFFERS----- */
+
 #holiday-offers {
 	padding: 5rem 0;
 	background-color: var(--clr-text);
@@ -667,4 +646,8 @@ textarea:focus {
 	color: var(--clr-background);
 	border: 1px solid var(--clr-background);
 	cursor: pointer;
+}
+
+.card-content > h3 {
+	visibility: hidden;
 }
