@@ -500,6 +500,10 @@ textarea:focus {
 	cursor: pointer;
 }
 
+#contact-us button:hover {
+	background-color: #60c663;
+	transition: .2s;
+}
 .message {
 	position: absolute;
 	top: 50%;
@@ -653,6 +657,7 @@ textarea:focus {
 .btn-details:hover {
 	color: var(--clr-text);
 	background-color: var(--clr-background);
+	transition: .3s;
 }
 .card-content > h3 {
 	visibility: hidden;
