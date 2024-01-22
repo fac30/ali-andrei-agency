@@ -159,4 +159,7 @@
   #about-us > div > img  {
     margin-top: 20px;
   }
+  #first-wrapper {
+    max-width: 28rem;
+  }
     }
