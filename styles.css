@@ -92,6 +92,7 @@ html[data-theme='dark'] {
 	padding: 1rem;
 }
 
+
 /* =========================================NAVIGATION======================================================= */
 
 .container {
@@ -212,9 +213,9 @@ h3 {
 /* ========================================LINKS STYLING===================================================*/
 a {
 	color: inherit;
-	border-bottom: 1px solid #505050;
+	border-bottom: 1px solid #b0b0b0;
 	text-decoration: none;
-	padding-bottom: -0.5em;
+	padding-bottom: -.5em;
 }
 
 a:hover {
@@ -361,12 +362,14 @@ footer>a:nth-child(1) {
 
 footer {
 	text-align: center;
+	margin-top: 2rem;
 }
 
 .backtop:hover {
 	transition: 0.5s;
 	transform: rotate(-5deg);
 }
+
 
 
 /* -----GALLERY----- */
@@ -647,7 +650,32 @@ textarea:focus {
 	border: 1px solid var(--clr-background);
 	cursor: pointer;
 }
-
+.btn-details:hover {
+	color: var(--clr-text);
+	background-color: var(--clr-background);
+}
 .card-content > h3 {
 	visibility: hidden;
 }
+
+/* ======================================ABOUT US============================================== */
+
+#about-us {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+#about-us > .box > * {
+	padding: .5rem;
+}
+
+.box > img {
+	width: 220px;
+	border-radius: 60px;
+	border: solid 1px white;
+	padding: 0 !important;
+}
+
