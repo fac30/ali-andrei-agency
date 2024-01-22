@@ -142,3 +142,14 @@ const catchphrases2 = {
 
   // Call the function to inject a random catchphrase when the page loads
   window.addEventListener('load', injectRandomCatchphrase2);
+
+
+
+
+  
+  // Back to the top button
+
+  const upBtn = document.querySelector(".fa-arrow-up");
+upBtn.addEventListener("click", () =>{
+  window.scrollTo({top: 0});
+})
