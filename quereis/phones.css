@@ -2,7 +2,7 @@
 @media (max-width: 576px) {
   
     html {
-      font-size: 40%;
+      font-size: 15.5px;
     }
     
   .logo-box {
@@ -11,7 +11,8 @@
     left: 4rem;
   }
   #how-it-works > .icon {
-    width: 25rem;
+    width: 300px;
+
   }
   
   div.box:nth-child(3) {
@@ -100,9 +101,13 @@
   }
 
   .grid-3 {
-  grid-auto-rows: 100px; 
   grid-template-columns: 1fr; 
-  grid-gap: 2em;
+  grid-gap: 6rem;
+  
+  }
+
+  #text-1, #text-2, #text-3 {
+    margin-top: -9rem;
   }
   
   #empty-1 {
@@ -116,11 +121,13 @@
   
   #empty-2 {
     grid-area: 9;
+    display: none;
   }
   
   #icon-portal {
     grid-area: 2;
-    margin-top: -6em;
+    margin-top: -7rem;
+
   }
   
   #text-1 {
@@ -129,14 +136,27 @@
   
   #icon-reactor {
     grid-area: 4;
+    margin-top: -6rem;
   }
   
   #text-2 {
-    grid-area: 5
+    grid-area: 5;
+  }
+
+  #icon-feedback {
+    grid-area: 6;
+    margin-top: -4rem;
   }
   
   #about-us {
     grid-template-columns: 1fr;
   }
-  
+  header > * > * > * > * >  .icon {
+    margin-top: -3rem;
+    margin-left: -3.5rem;
+  }
+
+  #about-us > div > img  {
+    margin-top: 20px;
+  }
     }
