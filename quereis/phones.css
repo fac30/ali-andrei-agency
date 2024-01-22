@@ -135,5 +135,8 @@
     grid-area: 5
   }
   
+  #about-us {
+    grid-template-columns: 1fr;
+  }
   
     }
