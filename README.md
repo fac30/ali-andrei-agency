@@ -4,7 +4,7 @@
 ## Overview
 We took advantage of this project to get creative. <br> 
 Waypoint is the leading agency in safe and ethical teleportation. <br> 
-And us, industry renowned experts within the quantum market, are doing it by the book.
+And we are industry renowned experts within the quantum market, doing it by the book.
 
 ## Built with:
 The website was built with:
