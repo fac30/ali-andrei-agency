@@ -2,7 +2,7 @@
 [Visit website](https://fac30.github.io/ali-andrei-agency/)
 
 ## Overview
-We took advantage of this project to get creative. 
+We took advantage of this project to get creative. <br> 
 Waypoint is the leading agency in safe and ethical teleportation, and us, industry renowned experts within the quantum market, are doing it by the book.
 
 ## Built with:
