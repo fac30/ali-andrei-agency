@@ -18,19 +18,20 @@
     />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="stylesheet" href="../quereis/desktops.css" />
-    <link rel="stylesheet" href="../quereis/tablets.css" />
-    <link rel="stylesheet" href="../quereis/phones.css" />
-    <link rel="stylesheet" href="../quereis/smallDevices.css" />
-    <script defer src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/quereis/diskTop.css" />
+    <link rel="stylesheet" href="./src/quereis/laptop.css" />
+    <link rel="stylesheet" href="./src/quereis/tablets.css" />
+    <link rel="stylesheet" href="./src/quereis/phones.css" />
+    <link rel="stylesheet" href="./src/quereis/smallDevices.css" />
+    <script defer src="./src/app.js"></script>
   </head>
 
   <body>
     <header class="header">
       <div class="container nav-container">
         <div class="nav-bar" tabindex="0">
-          <!-- <img class="logo" src="./img/logo.png" alt="logo"> -->
+         
           <div class="logo-box">
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1088 1080">
@@ -164,11 +165,12 @@
       <section id="first-wrapper">
         <div class="container">
           <div class="wrapper-content">
-          <div class="wrapper-title">
-            <h1 class="h1--changing center"></h1>
-            <h2 class="h2--changing center"></h2>
-           
-          </div>
+            <div class="wrapper-title">
+              <h1 class="h1--changing center"></h1>
+              <h2 class="h2--changing center"></h2>
+              
+            </div>
+            
            <p class="p--first center">
             Sit back and start making plans, Waypoint Traveling specialize in
             safe and ethical teleportation. We'll turn your travel dreams to
@@ -399,7 +401,7 @@
                   </g>
                   <g id="Fill_L4" data-name="Fill L4">
                     <path
-                      class="cls-2"
+                      class="cls-1"
                       d="M420.72,423.51l38.75,63.35,24.6-39.36S537,458,546.81,411.21l53.51-3.08L561.57,345.4,540,383.53s-60.89-9.23-64,32.6l-2.46,4.92Z"
                     />
                     <path
@@ -412,9 +414,9 @@
                       class="cls-1"
                       points="579.4 544.67 718.4 357.7 511.75 203.93 260.81 536.06 467.46 691.06 503.14 646.77"
                     />
-                    <circle class="cls-1" cx="390.88" cy="576.53" r="22.76" />
+                    <circle class="cls-3" cx="390.88" cy="576.53" r="22.76" />
                     <rect
-                      class="cls-1"
+                      class="cls-3"
                       x="759"
                       y="670.14"
                       width="70.12"
@@ -425,7 +427,7 @@
                       d="M759,696s-214,16-228.19,52.89c0,0-71.46,10-111.94-10.39a3.78,3.78,0,0,0-4.57.8c-7.41,8.49-25,41.15,109.13,69.25,0,0,89.19,32,235.57-14.15"
                     />
                     <path
-                      class="cls-1"
+                      class="cls-3"
                       d="M530.81,748.87S540,796.23,663.05,755"
                     />
                   </g>
@@ -450,31 +452,31 @@
         <div class="container">
           <div class="gallery-container">
             <a href="#" class="gallery-link"
-              ><img
+              target="_blank"><img
                 class="gallery-image"
-                src="./img/italy.jpeg"
-                alt="italy"
+                src="./src/img/italy.jpeg"
+                alt="italy-img"
               /><span class="gallery-title">italy</span></a
             >
             <a href="#" class="gallery-link"
-              ><img
+              target="_blank"><img
                 class="gallery-image"
-                src="./img/egypt.jpeg"
-                alt="egypt"
+                src="./src/img/egypt.jpeg"
+                alt="egypt-img"
               /><span class="gallery-title">egypt</span></a
             >
             <a href="#" class="gallery-link"
               ><img
                 class="gallery-image"
-                src="./img/turkey.jpeg"
-                alt="turkey"
+                src="./src/img/turkey.jpeg"
+                alt="turkey-img"
               /><span class="gallery-title">turkey</span></a
             >
             <a href="#" class="gallery-link"
               ><img
                 class="gallery-image"
-                src="./img/greece.jpeg"
-                alt="greece"
+                src="./src/img/greece.jpeg"
+                alt="greece-img"
               /><span class="gallery-title">greece</span></a
             >
           </div>
@@ -486,7 +488,7 @@
           <div class="cards-container">
             <div class="card">
               <img
-                src="./img/greece.jpeg"
+                src="./src/img/greece.jpeg"
                 class="card-image"
                 alt="greece-image"
               />
@@ -514,7 +516,7 @@
             </div>
             <div class="card">
               <img
-                src="./img/turkey.jpeg"
+                src="./src/img/turkey.jpeg"
                 class="card-image"
                 alt="turkey-img"
               />
@@ -540,7 +542,7 @@
             </div>
             <div class="card">
               <img
-                src="./img/italy.jpeg"
+                src="./src/img/italy.jpeg"
                 class="card-image"
                 alt="italy-image"
               />
@@ -566,7 +568,7 @@
             </div>
             <div class="card">
               <img
-                src="./img/egypt.jpeg"
+                src="./src/img/egypt.jpeg"
                 class="card-image"
                 alt="egypt-image"
               />
@@ -598,6 +600,22 @@
           <!-- <div class="overlay"></div> -->
           <div id="formContainer">
             <h2 class="contact-us-title">Contact Us!</h2>
+            <div class="contact-us-content">
+<div class="team-member">
+  <div class="title-container">
+  <img class="team-member-img" src="./src/img/andrei.jpeg" alt="Andrei-img"/>
+    <h2 class="team-member-name">Andrei Dutulescu</h2></div>
+    <p class="team-member-title">Teleportation Designer</p>
+    <p class="team-member-description">Web Developer and UX/UI Specialist with a background in graphic design and art direction. corporis.
+      <!-- <a class="read-more" href="#" target="_blank" >Read more</a></p> -->
+    <div class="team-member-contact">
+      
+      <a href="https://github.com/revforev">Get in touch</a>
+      
+    </div>
+   
+  </div>
+            
             <form id="contactForm">
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" required />
@@ -636,6 +654,20 @@
               </label>
               <button type="submit">Submit</button>
             </form>
+  <div class="team-member">
+  <div class="title-container">
+  <img class="team-member-img" src="./src/img/ali.png" alt="Ali-img"/>
+    <h2 class="team-member-name">Ali Qassab</h2></div>
+    <p class="team-member-title">Web Developer</p>
+    <p class="team-member-description">I am a seasoned accountant and successful food retail business owner with a passion for web development. With 10 years of experience in accounting and two years of online studies in HTML, CSS, and JavaScript, I offer a unique combination of...<a class="read-more" href="https://aliqassab.github.io/Portfolio/" target="_blank" >Read more</a></p>
+    <div class="team-member-contact">
+      <p> Contact: alaahan80@icloud.com</p>
+      <a href="mailto:alaahan80@icloud.com">Email Ali</a>
+      
+    </div>
+   
+  </div>
+            </div>
           </div>
           <div class="message">
             <p class="welcome-message">
@@ -708,7 +740,6 @@ Ah, the sweet smell of teleportation! We've done over ten trips with this agency
       <p>©Ali Qassab, Andrei Dutulescu 2024</p>
       <a href="https://www.foundersandcoders.com/">Founders and Coders</a>
       <div class="fa-arrow-up"></div>
-      <!-- <i class="fas fa-arrow-up"></i> -->
     </footer>
   </body>
 </html>

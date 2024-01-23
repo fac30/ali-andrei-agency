@@ -1,0 +1,20 @@
+@media (max-width: 320px) {
+  html {
+    font-size: 45%;
+  }
+  body {
+    padding: 0;
+  }
+  .h1--changing {
+    font-size: 4rem;
+    width: 90%;
+  }
+  .h2--changing {
+    font-size: 2.2rem;
+    width: 90%;
+  }
+  .p--first {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+}
