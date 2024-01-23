@@ -1,50 +1,52 @@
-# [Waypoint] Teleportation Agency
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge | Functions and asynchronous JavaScript</title>
+  </head>
+  <body>
+    <h1>Open the console</h1>
+    <script></script>
+  </body>
+</html>
 
-Welcome to the official website of the [Waypoint] Teleportation Agency. This repository contains the source code for our website.
+# Waypoint Traveling (Agency Website)
+[Visit website](https://fac30.github.io/ali-andrei-agency/)
 
-## Table of Contents
+We took advantage of this project to get creative. Waypoint is the leading agency in safe and ethical teleportation, and us, industry renowned experts within the quantum market, are doing it by the book.
 
-- [Introduction](#introduction)
-- [Technologies Used](#technologies-used)
-- [Folder Structure](#folder-structure)
-- [How to Run](#how-to-run)
-- [Contributing](#contributing)
+This website is split into 5 sections:
+* First wrapper - h1 and introduction to our agency;
+* How it works - a 3 column grid section that explains the teleportation process;
+* Destination gallery - a classic travel agency website trope, a picture gallery of sunny places to visit;
+* Our offers - showcasing special offers for in demand destinations;
+* Contact form - to be used in order to enquire about working with us;
+* About us - contains information about each member of our team;
+* Reviews - hand written reviews from people who have used our teleportation services;
 
+Our app features the following:
+* Theme switch - a JS automated button to switch between Dark Mode and Light Mode;
+* Responsive design - the website is fully reponsive, using multiple grids and media queries;
 
-## Introduction
+Built with:
+<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
+</a> 
+<a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+</a> 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="javascript logo" width="40" height="40"/> 
+</a> 
 
-The [Waypoint] Teleportation Agency website is designed to showcase our teleportation services and provide information about our agency. It features a minimalist design and user-friendly interface to make your navigation seamless.
+And using:
+* [Fontshare](https://fontshare.com/) - free typography resource;
+* [Coolors](https://www.coolors.co/) - choosing a colour scheme;
+* [Figma](https://figma.com/) - whiteboards for wireframes and inspiration;
 
-## Technologies Used
+Accesibility statement:
+The code has been validated using the [W3C Validator](https://validator.w3.org/) and complies to the Web Content Accessibility Guidelines [(WCAG) 2.1](https://www.w3.org/TR/WCAG21/), having been developed with accesibility tools such as [WAVE](https://wave.webaim.org/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview). If you have suggestions that would make this website more accessible, please get in touch, and we will be more than happy to make the adjustments.
 
-- HTML
-- CSS
-- JavaScript
-
-We've utilized [Font Awesome](https://fontawesome.com/) for icons and [Google Fonts](https://fonts.google.com/) for typography.
-
-## Folder Structure
-
-- `src/` - Contains the source code
-  - `styles.css` - Main stylesheet
- - `queries/` - Responsive styles for different devices
-  - `app.js` - JavaScript functionality
-
-## How to Run
-
-To run the website locally, follow these steps:
-
-1. Clone the repository: `git clone [https://github.com/fac30/ali-andrei-agency.git]`
-2. Open the `index.html` file in your preferred web browser.
-
-## Contributing
-
-If you would like to contribute to the development of our website, please follow these steps:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature/new-feature`
-3. Make your changes and commit: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
-
-
+- - - 
+_This website was built for a Founders & Coders project created by Ali and Andrei for FAC30a._
