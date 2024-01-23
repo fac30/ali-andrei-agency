@@ -20,7 +20,7 @@ We also used:
 * [Fontshare](https://fontshare.com/) - free typography resource;
 * [Coolors](https://www.coolors.co/) - choosing a colour scheme;
 * [Figma](https://figma.com/) - whiteboards for wireframes and inspiration;
-* [Thenounproject](https://thenounproject.com/) - icons and svgs;
+* [Thenounproject](https://thenounproject.com/) - inspiration for icons and svgs;
 
 ## Structure
 This website is split into 5 sections:
