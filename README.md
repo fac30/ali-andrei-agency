@@ -41,7 +41,6 @@ Our app features the following:
 
 ## Accessibility 
 
-Accesibility statement:
 The code has been validated using the [W3C Validator](https://validator.w3.org/) and complies to the Web Content Accessibility Guidelines [(WCAG) 2.1](https://www.w3.org/TR/WCAG21/), having been developed with accesibility tools such as [WAVE](https://wave.webaim.org/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview). If you have suggestions that would make this website more accessible, please get in touch, and we will be more than happy to make the adjustments!
 
 - - - 
