@@ -4,6 +4,7 @@
 ## Overview
 We took advantage of this project to get creative. Waypoint is the leading agency in safe and ethical teleportation, and us, industry renowned experts within the quantum market, are doing it by the book.
 
+## Built with:
 The website was built with:
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
@@ -15,12 +16,11 @@ The website was built with:
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="javascript logo" width="40" height="40"/> 
 </a> 
 
-And using:
+We also used:
 * [Fontshare](https://fontshare.com/) - free typography resource;
 * [Coolors](https://www.coolors.co/) - choosing a colour scheme;
 * [Figma](https://figma.com/) - whiteboards for wireframes and inspiration;
-
-
+* [Thenounproject](https://thenounproject.com/) - icons and svgs;
 
 ## Structure
 This website is split into 5 sections:
