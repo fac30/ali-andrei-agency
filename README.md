@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Challenge | Functions and asynchronous JavaScript</title>
-  </head>
-  <body>
-    <h1>Open the console</h1>
-    <script></script>
-  </body>
-</html>
-
 # Waypoint Traveling (Agency Website)
 [Visit website](https://fac30.github.io/ali-andrei-agency/)
 
