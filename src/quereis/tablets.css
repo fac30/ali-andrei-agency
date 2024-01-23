@@ -1,11 +1,9 @@
 @media (min-width: 576px) and (max-width: 768px) {
-
   html {
     font-size: 55%;
   }
   body {
     padding: 0;
-
   }
 
   .fa-bars {
@@ -95,13 +93,41 @@
   .review-content {
     grid-template-columns: 1fr 1fr;
   }
-  #contact-us {
-    height: auto;
-  }
+  
   .gallery-link:nth-child(1),
   .gallery-link:nth-child(2),
   .gallery-link:nth-child(4),
   .gallery-link:nth-child(3) {
     grid-column: span 1;
   }
+  /* ========= */
+  #contact-us {
+    height: auto;
+  }
+   .contact-us-content{
+      display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  gap: 2rem;
+  }
+ 
+  #contact-us  #contactForm {
+  grid-row: 1;
+  grid-column:  2; 
+  grid-column-end:span 2;
+  width: 100%;
+}
+ 
+.team-member:nth-child(1) {
+  grid-row: 2;
+  grid-column: 1;
+   grid-column-end:span 2;
+}
+
+.team-member:nth-child(3) {
+  grid-row: 2;
+  grid-column: 3 ; 
+   grid-column-start:span 2;
+
+} 
 }
