@@ -74,6 +74,7 @@ const catchphrases = {
   // Add more catchphrases as needed
 };
 const catchphrases2 = {
+
   1: "We know..",
   2: "Us too..",
   3: "We get you!",
@@ -99,3 +100,12 @@ const upBtn = document.querySelector(".fa-arrow-up");
 upBtn.addEventListener("click", () =>{
   window.scrollTo({top: 0});
 })
+
+
+  // Back to the top button
+
+  const upBtn = document.querySelector(".fa-arrow-up");
+upBtn.addEventListener("click", () =>{
+  window.scrollTo({top: 0});
+})
+

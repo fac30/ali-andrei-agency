@@ -1,8 +1,11 @@
 @media (max-width: 576px) {
+
   html {
+
     
     font-size: 50%;
   }
+
   body {
     padding: 0;
   
@@ -10,6 +13,7 @@
 
  
   .fa-bars {
+
     position: absolute;
     top: 4rem;
     right: 4rem;
@@ -119,6 +123,9 @@
   }
 
   .grid-3 {
+
     grid-template-columns: 1fr;
   }
 }
+
+
