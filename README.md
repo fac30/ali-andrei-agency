@@ -2,7 +2,7 @@
 [Visit website](https://fac30.github.io/ali-andrei-agency/)
 
 ## Overview
-We took advantage of this project to get creative. <br> 
+We took advantage of this project to get [creative](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDBxbmRkNHd6cW9ibG44YXl4czk3b3Vud200cXU2dnVjeXVsNTd2dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4y6DqPvlICp5S/giphy.gif). <br> 
 **Waypoint Traveling** is the leading agency in safe and ethical teleportation. <br> 
 And we are *industry renowned experts* within the quantum market, doing it by the book.
 
