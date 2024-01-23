@@ -1,22 +1,10 @@
-# Waypoint Traveling (Agency Website)
+# Waypoint Traveling
 [Visit website](https://fac30.github.io/ali-andrei-agency/)
 
+## Overview
 We took advantage of this project to get creative. Waypoint is the leading agency in safe and ethical teleportation, and us, industry renowned experts within the quantum market, are doing it by the book.
 
-This website is split into 5 sections:
-* First wrapper - h1 and introduction to our agency;
-* How it works - a 3 column grid section that explains the teleportation process;
-* Destination gallery - a classic travel agency website trope, a picture gallery of sunny places to visit;
-* Our offers - showcasing special offers for in demand destinations;
-* Contact form - to be used in order to enquire about working with us;
-* About us - contains information about each member of our team;
-* Reviews - hand written reviews from people who have used our teleportation services;
-
-Our app features the following:
-* Theme switch - a JS automated button to switch between Dark Mode and Light Mode;
-* Responsive design - the website is fully reponsive, using multiple grids and media queries;
-
-Built with:
+The website was built with:
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> 
 </a> 
@@ -31,6 +19,25 @@ And using:
 * [Fontshare](https://fontshare.com/) - free typography resource;
 * [Coolors](https://www.coolors.co/) - choosing a colour scheme;
 * [Figma](https://figma.com/) - whiteboards for wireframes and inspiration;
+
+
+
+## Structure
+This website is split into 5 sections:
+* First wrapper - h1 and introduction to our agency;
+* How it works - a 3 column grid section that explains the teleportation process;
+* Destination gallery - a classic travel agency website trope, a picture gallery of sunny places to visit;
+* Our offers - showcasing special offers for in demand destinations;
+* Contact form - to be used in order to enquire about working with us;
+* About us - contains information about each member of our team;
+* Reviews - hand written reviews from people who have used our teleportation services;
+
+## Features 
+Our app features the following:
+* Theme switch - a JS automated button to switch between Dark Mode and Light Mode;
+* Responsive design - the website is fully reponsive, using multiple grids and media queries;
+
+## Accessibility 
 
 Accesibility statement:
 The code has been validated using the [W3C Validator](https://validator.w3.org/) and complies to the Web Content Accessibility Guidelines [(WCAG) 2.1](https://www.w3.org/TR/WCAG21/), having been developed with accesibility tools such as [WAVE](https://wave.webaim.org/) and [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview). If you have suggestions that would make this website more accessible, please get in touch, and we will be more than happy to make the adjustments.
